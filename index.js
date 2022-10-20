@@ -50,7 +50,7 @@ app.post("/webhook", (req, res) => { //i want some
 
             console.log("phone number " + phon_no_id);
             console.log("from " + from);
-            console.log("mMessage received: " + msg_body);
+            console.log("Message received: " + msg_body);
 
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
