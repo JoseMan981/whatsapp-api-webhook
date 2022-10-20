@@ -52,7 +52,7 @@ app.post("/webhook", (req, res) => { //i want some
             console.log("from " + from);
             console.log("Message received: " + msg_body);
 
-            var myHeaders = new Headers();
+            /*var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
             myHeaders.append("Cookie", "BrowserId=6mQWQ1CvEe2GXJGnI3FDOw; CookieConsentPolicy=0:1; LSKey-c$CookieConsentPolicy=0:1");
 
@@ -70,7 +70,7 @@ app.post("/webhook", (req, res) => { //i want some
             fetch("https://personak-dev-ed.my.salesforce-sites.com/services/apexrest/Message_received", requestOptions)
                 .then(response => response.text())
                 .then(result => console.log(result))
-                .catch(error => console.log('error', error));
+                .catch(error => console.log('error', error));*/
 
             axios({
                 method: "POST",
